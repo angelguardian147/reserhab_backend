@@ -1,0 +1,177 @@
+
+<!-- container -->
+<div class="container">
+
+    <ol class="breadcrumb">
+        <li><a routerLink="/" id="quitar_raya_enlace"><b>Inicio</b></a></li>
+        <p>&nbsp;/ Registro Service</p>
+    </ol>
+
+    <div class="row">
+
+        <!-- Article main content -->
+        <article class="col-xs-5 maincontent">
+
+            <header class="page-header">
+                <h1 class="page-title">Registro</h1>
+            </header>
+
+            <div class="d-flex align-items-center flex-column bd-highlight mb-3 border-top border-3 dflex">
+
+                <br>
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 border-top border-end border-bottom border-start border-3">
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-body p-3">
+
+                            <h3 class="thin text-center">Registrar un servicio</h3>
+
+                            <form (submit)="createService()" class="p-3">
+
+                                <div class="mb-3">
+
+                                    <div class="row g-3">
+
+                                        <div class="col">
+
+                                            <label for="exampleInputNumber1" class="form-label">
+                                                Nombre
+                                            </label>
+
+                                            <span class="text-danger">*</span>
+                                            <input [(ngModel)]="service.nombre" name="nombre" type="text" class="form-control" id="exampleInputText1">
+                                            <div id="emailHelp" class="form-text">
+                                                Ingresar el nombre del servicio
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col">
+
+                                            <label for="exampleInputNumber1" class="form-label">
+                                                Descripción
+                                            </label>
+
+                                            <span class="text-danger">*</span>
+                                            <textarea [(ngModel)]="service.descripcion" name="descripcion" class="form-control" id="exampleInputText2" cols="30" rows="10"></textarea>
+                                            <div id="emailHelp" class="form-text">
+                                                Ingresar una breve descripción sobre el servicio a registrar
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary" type="submit">
+                                        <b>Aceptar</b>
+                                    </button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+        <!-- /Article -->
+
+    </div>
+
+</div>
+<!-- /container -->
+
+<!-- footer -->
+<footer class="top-space text-white" id="footer">
+
+    <div class="footer1 bg-primary p-3">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3 widget">
+
+                    <h3 class="widget-title">Contactos</h3>
+
+                    <div class="widget-body">
+                        <p>+57 300 215 4024<br>
+                            <br/>
+                            <a href="mailto:#" class="text-white" id="quitar_raya_enlace">reservarya@gmail.com</a><br>
+                            <br/>
+                            Calle 34 Casa 12, Don Alberto.
+                        </p>	
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 widget">
+
+                    <h3 class="widget-title">Sígueme</h3>
+
+                    <div class="widget-body">
+                        <p class="follow-me-icons">
+                            <a href="#"><i class="bi bi-facebook text-white"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-white"></i></a>
+                            <a href="#"><i class="bi bi-github text-white"></i></a>
+                            <a href="#"><i class="bi bi-youtube text-white"></i></a>
+                        </p>	
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 widget">
+
+                    <h3 class="widget-title">Reserva YA</h3>
+                    
+                    <div class="widget-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+                    </div>
+
+                </div>
+
+            </div><!-- /row of widgets -->
+
+        </div>
+
+    </div>
+
+    <div class="footer2 bg-light">
+
+        <div class="container p-2">
+
+            <div class="row">
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="simplenav text-primary">
+                           | <a routerLink="/" class="text-primary" id="quitar_raya_enlace">Inicio</a> | 
+                            <b><a routerLink="/userlog" class="text-primary" id="quitar_raya_enlace"><b class="text-primary" >Iniciar sesión</b></a></b> |
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 widget">
+                    <div class="widget-body">
+                        <p class="text-primary">
+                            Copyright &copy; 2022, Jossid. Deseñado por <a href="http://softcop.com/" rel="designer" class="text-primary" id="quitar_raya_enlace"><b>softcop</b></a> 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+

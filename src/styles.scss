@@ -1,1 +1,152 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    --bg-color: #e9edf4;
+    --first-color: #007bff;
+    --second-color: #17a2b8;
+
+    // primera paleta
+    --first-blue: #003785;
+    --second-blue: #1465bb;
+    --third-blue: #2196f3;
+    --fourth-blue: #81c9fa;
+    --fifth-blue: #b9ffff;
+
+    // segunda paleta
+    --f-blue: #008eea;
+    --s-blue: #39a0ff;
+    --t-blue: #0026e9;
+    --ft-blue: #3b38ff;
+    --ff-blue: #25f4e9;
+
+    // tercera paleta
+    --fd-blue: #131c46;
+    --sd-blue: #3c4c8f;
+    --td-blue: #063254;
+    --ftd-blue: #082338;
+    --ffd-blue: #1d405c;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    transition: all 2s;
+}
+
+.logo{
+    width: 30px;
+    height: 24px;
+}
+
+#sobre_nosotros p{
+    text-align: justify;
+}
+
+.jumb{
+    width: 32px;
+    height: 32px;
+}
+
+.p-jumb{
+    text-align: justify;
+}
+
+#quitar_raya_enlace {
+    text-decoration: none;
+}
+
+#border-nav {
+    padding-top: 10px; padding-left: 10px; padding-bottom: 10px; padding-right: 10px;
+}
+
+#delete-punto_lista {
+    list-style:none;
+}
+
+.cambiar:hover {
+    background-color: blue;
+    color: white;
+}
+
+.carrousel-item2 {
+    height: 34rem;
+}
+
+.border-index {
+    border-radius: 1rem;
+}
+
+.nav-img-size-left {
+    height: 35px;
+}
+
+.nav-img-size-right {
+    height: 1.5rem; 
+    right: 1.5rem;
+}
+
+.nav-size-right {
+    margin-right: 4rem;
+}
+
+.tam-nav-izq {
+    margin-left: 4rem;
+}
+
+.dropdown-menu-icon-size {
+    font-size: 1.5rem;
+}
+
+.modal-icon-size .search-icon-size {
+    font-size: 1rem;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}

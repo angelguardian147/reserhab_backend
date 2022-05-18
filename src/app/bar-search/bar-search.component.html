@@ -1,0 +1,45 @@
+
+<!-- buscar habitación -->
+<div class="container-fluid pt-5 mt-5 d-inline-flex justify-content-center">
+    <div class="row">
+      <div class="col">
+        <div class="shadow bg-white rounded-pill nav-search-size">
+          <div class="row">
+            <div class="col-sm-3">
+              <select class="form-select rounded-pill p-4 hov border-0" aria-label="Floating label select">
+                <option value="0" *ngFor="let dept of departments">{{dept.departamento}}</option>
+              </select>
+            </div>
+            <div class="col-sm-auto d-flex justify-content-center align-items-center">
+                <span class="border-end border-1 h-50"></span>
+            </div>
+            <div class="container-fluid col-sm-5 d-flex justify-content-center align-items-center">
+                <app-datepicker></app-datepicker>
+            </div>
+            <div class="col-sm-auto d-flex justify-content-center align-items-center">
+                <span class="border-end border-1 h-50"></span>
+            </div>
+            <div class="col-sm-3">
+              <div class="d-inline-flex align-items-center rounded-pill hov">
+                <select class="form-select pt-4 pb-4 rounded-pill border-0" aria-label="Floating label select">
+                    <option value="0">N° de huéspedes</option>
+                    <option value="1">1 huésped</option>
+                    <option value="2">2 huéspedes</option>
+                    <option value="3">3 huéspedes</option>
+                    <option value="4">4 huéspedes</option>
+                  </select>
+                  <button class="btn btn-primary rounded-circle me-2" type="button">
+                    <b class="text-center icon-size">
+                        <i class="bi bi-search active search-icon-size"></i>
+                    </b>
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /buscar habitación -->
+  

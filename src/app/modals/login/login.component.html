@@ -1,0 +1,84 @@
+
+<!-- modal iniciar sesión o registrarme con celular -->
+<div class="modal-header">
+    <div class="col-1"></div>
+    <div class="col-9">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Iniciar sesión o registrarme</h5>
+    </div>
+    <div class="col-1">
+        <button type="button" class="btn-close btn btn-danger mt-1 mb-1" (click)="activeModal.dismiss('Cross click')"
+            aria-label="Close"></button>
+    </div>
+</div>
+<div class="modal-body">
+    <form class="p-3 pt-1">
+        <h5 class="pb-2">
+            Te damos la bienvenida a Reserhab
+        </h5>
+        <div class="mb-3">
+            <div *ngIf="componentCell">
+                <app-logcell></app-logcell>
+            </div>
+        </div>
+        <div *ngIf="componentEmail">
+            <app-logemail (notification)="onNotify($event)"></app-logemail>
+        </div>
+        <div class="modal-footer"></div>
+        <div class="position-relative">
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-primary" type="button" (click)="confirmUser()">
+                    <b>ACEPTAR</b>
+                </button>
+            </div>
+        </div>
+        <br />
+        <div class="modal-footer justify-content-center">
+            <b class="text-dark">Elige una opción</b>
+        </div>
+        <div class="d-grid gap-2">
+            <a *ngIf="componentCell" class="btn btn-outline-dark" (click)="logEmail()" type="button">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <i class="bi bi-envelope modal-icon-size"></i>
+                    </div>
+                    <div class="col-8 text-center">
+                        Correo Electrónico
+                    </div>
+                </div>
+            </a>
+            <a *ngIf="componentEmail" class="btn btn-outline-dark" (click)="logCell()" type="button">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <i class="bi bi-phone modal-icon-size"></i>
+                    </div>
+                    <div class="col-8 text-center">
+                        Celular
+                    </div>
+                </div>
+            </a>
+            <button class="btn btn-outline-primary" type="button">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <i class="bi bi-facebook modal-icon-size"></i>
+                    </div>
+                    <div class="col-8 text-center">
+                        Facebook
+                    </div>
+                </div>
+            </button>
+            <button class="btn btn-outline-danger" type="button">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <i class="bi bi-google modal-icon-size"></i>
+                    </div>
+                    <div class="col-8 text-center">
+                        Google
+                    </div>
+                </div>
+            </button>
+        </div>
+    </form>
+</div>
+<!-- modal iniciar sesión o registrarme con celular -->
+
+            

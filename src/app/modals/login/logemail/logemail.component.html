@@ -1,0 +1,48 @@
+
+<!-- iniciar sesión o registrarme con correo -->
+
+<!-- collapse-msj-contraseña-no-creada -->
+
+<div class="collapse pt-2 pb-4" id="collapseExample">
+    <div class="container pt-2 pb-2 border border-1">
+        <div class="row">
+            <div class="col-1 d-flex justify-content-center ms-2 mt-3">
+                <i class="bi bi-exclamation-octagon-fill text-danger" style="font-size: 2rem;"></i>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col">
+                        <b>Vamos a intentarlo de nuevo</b>
+                    </div>
+                    <div class="form-text">
+                        Todavia no has creado una contraseña. Acabamos de enviarte un enlace a
+                        joser1.jidl@gmail.com para que crees una.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /collapse-msj-contraseña-no-creada -->
+
+<div class="mb-3">
+    <div class="form-floating">
+        <input type="email" (keyup)="sendBackUser()" [(ngModel)]="username" class="form-control" id="floatingInputEmail1" aria-describedby="emailHelp"
+            placeholder="name@example.com" required>
+        <label for="floatingInputEmail1" class="text-secondary" aria-placeholder="emailHelp" id="emailHelp">
+            Correo electronico
+            <span class="text-danger">*</span>
+        </label>
+        <div id="emailHelp" class="form-text">
+            Debe incluir el formato ejemplo@correo.com.
+        </div>
+    </div>
+</div>
+
+<a class="text-black" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+    aria-controls="collapseExample"><b>Mensaje collapse</b></a>
+
+<!-- /iniciar sesión o registrarme con correo -->
+
+
